@@ -115,10 +115,10 @@ def show_Percapita():
 
 # BEFORE DOING ANYTHING, LETS IMPORT OUR DATA USING THE MASTER FUNCTION SO IT CAN BE USED LATER
 # ADD A TITLE AND SUBTITLE AT THE TOP
-st.title("Global Warming and It's Effects")
+st.title("Global Warming and Its Effects")
 st.subheader("BY: AI-Camp")
 
-st.markdown("<h4>This dataset is dedicated to explaining how global warming has affected multiple areas of life, including devastating forst fires, horrible CO2 emissions, and horrifiying temperature increases. \n Please view with consideration. </h4>", unsafe_allow_html=True)
+st.markdown("<h4>This dataset is dedicated to explaining how global warming has affected multiple areas of life; including devastating forest fires, horrible CO2 emissions, and horrifiying temperature increases. Please view with consideration. </h4>", unsafe_allow_html=True)
 # THIS SECTION SHOWS HOW YOU CAN HAVE TWO COLUMNS SIDE BY SIDE, THE RATIO DEFINES HOW MUCH SPACE EACH COLUMN TAKES UP
 # IN THIS CASE 3,2 MEANS row0_1 WILL BE 3X WIDE AND row0_2 WILL BE 2X WIDE
 # YOU WILL LIKELY HAVE TO MANUALLY SET THE WIDTH AND HEIGHT OF VISUALS
