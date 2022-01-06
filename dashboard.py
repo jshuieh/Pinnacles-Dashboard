@@ -22,7 +22,7 @@ CO2_emissions = pd.read_csv('CO2Emission_LifeExp.csv')
 cleaned_df = pd.read_csv("Year_Country_AvgTemp.csv")
 Emission = CO2_emissions
 city = pd.read_csv("GlobalWarming_InterestBy_City.csv")
-grouped_countries = pd.read_pickle('country_avgtemp.zip')
+grouped_countries = pd.read_pickle('countries.pkl')
 
 
 def show_temp_map():
