@@ -1,0 +1,7 @@
+(base) ]0;~/dashboard[01;34m~/dashboard[00m$ git [K[K[K[Kstreamlit run dashboard.py
+[0m
+[34m[1m  You can now view your Streamlit app in your browser.[0m
+[0m
+[34m  Network URL: [0m[1mhttp://172.17.0.2:8501[0m
+[34m  External URL: [0m[1mhttp://54.183.143.125:8501[0m
+[0m
