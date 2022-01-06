@@ -22,6 +22,12 @@ CO2_emissions = pd.read_csv('CO2Emission_LifeExp.csv')
 cleaned_df = pd.read_csv("Year_Country_AvgTemp.csv")
 Emission = CO2_emissions
 city = pd.read_csv("GlobalWarming_InterestBy_City.csv")
+grouped_countries = pd.read_pickle('country_avgtemp.zip')
+
+
+def show_temp_map():
+    fig = px.choropleth(grouped_countries, locations="Country", color="AvgTemperature", animation_frame="Year", locationmode = "country names", height = 750, range_color=[15,95], title='Yearly Average Temperature Around the World')
+    return fig
 
 def show_global_warming_city():
     fig = px.scatter(city, x='City', y='Global Warming: (1/1/04 - 9/27/21)')
@@ -164,6 +170,7 @@ fig12 = show_Emissions()
 fig13 = show_Percapita()
 
 fig14 = show_global_warming_city()
+fig15 = show_temp_map()
 
 
 row0_1, row0_2 = st.columns((1,1))
@@ -244,7 +251,7 @@ st.write('')
 st.write('')
 st.write('')
 
-row5_1, row5_2 = st.columns((1, 1))
+row5_1, row5_2 = st.columns((3, 2))
 
 with row5_1:
     st.plotly_chart(fig14, use_container_width=True)
@@ -292,4 +299,12 @@ st.write('')
 st.write('The first graph shows the CO2 Emissions emitted by a Country while the second graph takes the CO2 Emissions of a country and divides it by the population of the country. The second graph which shows the CO2 Emissions per capita takes the CO2 emissions in relation to every person in that country.')
 
 
+st.write('')
+st.write('')
+st.write('')
+st.write('')
+st.write('')
+st.write('')
+
+st.plotly_chart(fig15, use_container_width=True)
 

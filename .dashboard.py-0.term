@@ -5,3 +5,34 @@
 [34m  Network URL: [0m[1mhttp://172.17.0.2:8501[0m
 [34m  External URL: [0m[1mhttp://54.183.143.125:8501[0m
 [0m
+/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/miniconda3/lib/python3.9/site-packages/streamlit/script_runner.py:354: DtypeWarning:
+
+Columns (2) have mixed types.Specify dtype option on import or set low_memory=False.
+
+2022-01-06 22:01:05.865 Traceback (most recent call last):
+  File "/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/miniconda3/lib/python3.9/site-packages/streamlit/script_runner.py", line 354, in _run_script
+    exec(code, module.__dict__)
+  File "/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/dashboard/dashboard.py", line 178, in <module>
+    fig15 = show_temp_map()
+  File "/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/dashboard/dashboard.py", line 34, in show_temp_map
+    fig = px.choropleth(grouped_countries, locations="Country", color="AvgTemperature", animation_frame="Year", locationmode = "country names", range_color=[15,95], zoom = 2, title='Yearly Average Temperature Around the World')
+TypeError: choropleth() got an unexpected keyword argument 'zoom'
+
+2022-01-06 22:01:49.637 Traceback (most recent call last):
+  File "/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/miniconda3/lib/python3.9/site-packages/streamlit/script_runner.py", line 354, in _run_script
+    exec(code, module.__dict__)
+  File "/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/dashboard/dashboard.py", line 178, in <module>
+    fig15 = show_temp_map()
+  File "/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/dashboard/dashboard.py", line 34, in show_temp_map
+    fig = px.choropleth_mapbox(grouped_countries, locations="Country", color="AvgTemperature", animation_frame="Year", locationmode = "country names", range_color=[15,95], zoom = 2, title='Yearly Average Temperature Around the World')
+TypeError: choropleth_mapbox() got an unexpected keyword argument 'locationmode'
+
+2022-01-06 22:09:51.422 Traceback (most recent call last):
+  File "/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/miniconda3/lib/python3.9/site-packages/streamlit/script_runner.py", line 354, in _run_script
+    exec(code, module.__dict__)
+  File "/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/dashboard/dashboard.py", line 178, in <module>
+    fig15 = show_temp_map()
+  File "/projects/659f0ab0-f986-4d55-876b-9ccedb634c60/dashboard/dashboard.py", line 29, in show_temp_map
+    grouped_countries = cityTemp.groupby(['Country', 'Year'])
+NameError: name 'cityTemp' is not defined
+
