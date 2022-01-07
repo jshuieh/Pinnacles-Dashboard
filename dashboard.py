@@ -9,7 +9,8 @@ import plotly.graph_objects as go
 from skimage import io
 
 ####################################
-
+image = Image.open('download.jpg')
+st.image(image, caption='global warming')
 # ADD ALL FUNCTIONS FROM YOUR JUPYTER NOTEBOOKS HERE ONCE TESTED
 # EACH FUNCTION MUST BE SELF CONTAINED, TO TEST THAT THEY ARE RUN THEM IN A JUPYTER NOTEBOOK FOR TESTING (see function_testing_notebook)
 ######################################################################
