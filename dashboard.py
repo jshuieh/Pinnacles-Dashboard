@@ -226,7 +226,7 @@ with row1_1:
     st.write('Global forest fires by month, day, and temperature.')
 with row1_2:
     st.plotly_chart(fig7, use_container_width=True)
-    st.write('chart that has multiple layers to explain how many fires have begun to occur.')
+    st.write('A chart that has multiple layers to explain how many fires have begun to occur.')
 
 st.write('')
 st.write('')
@@ -238,7 +238,7 @@ row4_1, row4_2 = st.columns((1,1))
 
 with row1_1:
     st.plotly_chart(fig8, use_container_width=True)
-    st.write('A 3d chart explaining how any fires have occured with data for months, temperature, and wind.')
+    st.write('A 3d chart explaining how any fires have occurred with data for months, temperature, and wind.')
 with row1_2:
     st.plotly_chart(fig9, use_container_width=True)
     st.write("A symbolic photo of our world's state today.🔥 ")
@@ -275,11 +275,11 @@ st.write('')
 row6_1, row6_2 = st.columns((1, 1))
 with row6_1:
     st.plotly_chart(fig10, use_container_width=True)
-    st.write('Scatter Plot of Average Temperature Change of Countries')
+    st.write('Scatter Plot of Average Temperature Change of Countries.')
+
 with row6_2:
     st.plotly_chart(fig11, use_container_width=True)
-    st.write('Line Graph of Average Temperature Change of Countries')
-
+    st.write('Line Graph of Average Temperature Change of Countries.')
 st.write('')
 st.write('')
 st.write('')
@@ -289,10 +289,10 @@ row7_1, row7_2 = st.columns((1, 1))
 
 with row7_1:
     st.plotly_chart(fig12, use_container_width=True)
-    st.write('World Map with CO2 Emissions from every Country')
+    st.write('World Map with CO2 Emissions from every Country.')
 with row7_2:
     st.plotly_chart(fig13, use_container_width=True)
-    st.write('World Map with CO2 Emissions per Capita for Each Country')
+    st.write('World Map with CO2 Emissions per Capital for Each Country.')
 
 st.write('')
 st.write('')
