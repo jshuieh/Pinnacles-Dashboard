@@ -42,7 +42,7 @@ def show_scatter_with_background(forest_fires):
         go.Scatter(x=forest_fires['temp'], y=forest_fires['wind'], mode='markers')
     )
 
-    fig.update_layout(
+    figs.update_layout(
         title="Wind vs Temperature",
         xaxis_title="Temperature",
         yaxis_title="Wind"
