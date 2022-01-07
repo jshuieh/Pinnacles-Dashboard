@@ -42,6 +42,12 @@ def show_scatter_with_background(forest_fires):
         go.Scatter(x=forest_fires['temp'], y=forest_fires['wind'], mode='markers')
     )
 
+    fig.update_layout(
+        title="Wind vs Temperature",
+        xaxis_title="Temperature",
+        yaxis_title="Wind"
+    )
+    
     # Add images
     figs.add_layout_image(
             dict(
@@ -175,7 +181,7 @@ fig15 = show_temp_map()
 
 row0_1, row0_2 = st.columns((1,1))
 with row0_1:
-    st.plotly_chart(fig1, use_container_width=True)
+    st.plotly_chart(fig4, use_container_width=True)
 with row0_2:
     st.write('')
     st.write("If a dot is yellow, it signifies a high FFMC, which stands for Fine Fuel Moisture Code. When you have a high FFMC, that means that there is a likely chance of a wildfire to occur in that area due to the fact that it is very dry. This is becoming a big factor in climate change.")
@@ -209,7 +215,7 @@ st.write('')
 st.write('')
 st.write('')
 
-st.plotly_chart(fig4, use_container_width=True)
+st.plotly_chart(fig1, use_container_width=True)
 st.write('Global forest fires because of the wind and temp. FFMC(Fine Fuel Moisture Code).')
 
 st.write('')
@@ -238,7 +244,7 @@ row4_1, row4_2 = st.columns((1,1))
 
 with row1_1:
     st.plotly_chart(fig8, use_container_width=True)
-    st.write('A 3d chart explaining how any fires have occurred with data for months, temperature, and wind.')
+    st.write('A 3d chart explaining how many fires have occurred with data for months, temperature, and wind.')
 with row1_2:
     st.plotly_chart(fig9, use_container_width=True)
     st.write("A symbolic photo of our world's state today.🔥 ")
