@@ -283,7 +283,7 @@ with row6_2:
 st.write('')
 st.write('')
 st.write('')
-st.write('These graphs show the temperature change from one year to another. In the past twenty years, we can see that the temperature change has been mostly positive which shows that the average temperature of the world is rising.')
+st.write('These graphs show the temperature change from one year to another. In the past twenty years, we can see that temperature change has been mostly positive, which shows that the average temperature of the world is rising.')
 
 row7_1, row7_2 = st.columns((1, 1))
 
@@ -292,11 +292,11 @@ with row7_1:
     st.write('World Map with CO2 Emissions from every Country.')
 with row7_2:
     st.plotly_chart(fig13, use_container_width=True)
-    st.write('World Map with CO2 Emissions per Capital for Each Country.')
+    st.write('World Map with CO2 Emissions per capita for Each Country.')
 
 st.write('')
 st.write('')
-st.write('The first graph shows the CO2 Emissions emitted by a Country while the second graph takes the CO2 Emissions of a country and divides it by the population of the country. The second graph which shows the CO2 Emissions per capita takes the CO2 emissions in relation to every person in that country.')
+st.write('The first graph shows the CO2 Emissions emitted by a Country, while the second graph takes the CO2 Emissions of a country and divides it by the population of the country. The second graph which shows the CO2 emissions per capita, takes the CO2 emissions in relation to every person in that country.')
 
 
 st.write('')
